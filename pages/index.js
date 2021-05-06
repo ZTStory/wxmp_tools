@@ -6,7 +6,13 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        itemsArray: [{
+            name: "网络请求",
+            action: "request"
+        }, {
+            name: "日历",
+            action: "calendar"
+        }]
     },
 
     /**
@@ -15,7 +21,12 @@ Page({
     onLoad: function (options) {
         
     },
-
+    request() {
+        console.log('request');
+    },
+    calendar() {
+        console.log('calendar');
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

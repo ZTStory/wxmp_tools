@@ -1,0 +1,9 @@
+<!--components/cell/cell.component.wxml-->
+<view class="cell" bindtap="onTap">
+	<image wx:if="{{iconImg.length > 0}}" src="{{iconImg}}" class="icon-image"></image>
+	<text class="title">{{title}}</text>
+	<view class="slot_content">
+		<slot></slot>
+	</view>
+	<text class="icon-right"></text>
+</view>

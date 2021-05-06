@@ -1,2 +1,9 @@
 <!--pages/index.wxml-->
-<text>pages/index.wxml</text>
+<view class="table">
+    <block wx:for="{{itemsArray}}" wx:key="index">
+        <view class="cell">
+            <cell bindclick="{{item.action}}" title="{{item.name}}"></cell>
+        </view>
+    </block>
+</view>
+

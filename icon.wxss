@@ -1,0 +1,232 @@
+/* 蓝色边框 tips */
+.blue_tip {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+}
+.blue-tip::before {
+    display: inline-block;
+    content: "i";
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+}
+
+/* 灰色边框 tips */
+.gray-border-tip::before {
+    display: inline-block;
+    content: "i";
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+/* 灰色实心 tips */
+.gray_tip {
+    display: inline-block;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #ccc;
+    color: #fff;
+    
+}
+
+.gray-tip::before {
+    display: inline-block;
+    content: "!";
+    font-size: 11px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #ccc;
+    color: #fff;
+}
+
+/* cell 向右箭头（大） */
+.icon-right::before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 15px;
+    margin-top: -5px;
+    border-left: 2px solid #c6c6c6;
+    border-top: 2px solid #c6c6c6;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+/* 明细向上箭头（小） */
+.icon-arrow-up {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.icon-arrow-up::before {
+    content: " ";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* 明细向下箭头（小） */
+.icon-arrow-down {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.icon-arrow-down::before {
+    content: " ";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin-top: 2px;
+    position: absolute;
+}
+
+/* 实心三角（全部订单列表） */
+.icon-arrow-solid-down::before {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #fff transparent transparent;
+    position: relative;
+    top: 3px;
+}
+
+.icon-arrow-solid-up::before {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #fff;
+    position: relative;
+    top: -3px;
+}
+
+/* 步进器 */
+.icon_step {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 21px;
+    height: 22px;
+    width: 22px;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00a4ff;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 20px;
+}
+
+.step_solid {
+    background-color: #00a4ff;
+    color: #fff;
+}
+
+.step_solid_disabled {
+    color: #fff;
+    background-color: #c1c1c1;
+    border-color: #c1c1c1;
+}
+
+.step_disabled {
+    color: #ccc;
+    border-color: #ccc;
+}
+
+.step_gray {
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+    color: #666;
+}
+
+.step_gray_disable {
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+    color: #666;
+}
+
+/* inline arrow */
+.arrow_right {
+    border: solid #999;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow_up {
+    border: solid #999;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg) translate(-1px, 0px);
+    -webkit-transform: rotate(-135deg) translate(-1px, 0px);
+}
+
+.arrow_down {
+    border: solid #999;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg) translate(-1px, -3px);
+    -webkit-transform: rotate(45deg) translate(-1px, -3px);
+}
+
+.arrow_style_white {
+    border-color: #fff;
+}
+.arrow_style_primary{
+    border-color: #00a4ff;
+}

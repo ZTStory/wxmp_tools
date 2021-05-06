@@ -1,0 +1,29 @@
+/* components/cell/cell.component.wxss */
+
+
+@import "/icon.wxss";
+
+.cell {
+    height: 44px;
+    width: calc(100% - 15px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    padding-left: 15px;
+}
+
+.icon-image {
+    width:20px;
+    height:20px;
+    margin-right: 10px;
+}
+
+.slot_content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 30px;
+    justify-content: space-between;
+}

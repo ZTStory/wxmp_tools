@@ -1,1 +1,9 @@
 /* pages/index.wxss */
+
+.table .cell {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+/* .cell:last-child {
+    border-bottom: none;
+} */
