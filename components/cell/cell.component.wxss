@@ -1,6 +1,4 @@
 /* components/cell/cell.component.wxss */
-
-
 @import "/icon.wxss";
 
 .cell {
